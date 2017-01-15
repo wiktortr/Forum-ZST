@@ -1,0 +1,133 @@
+﻿<!DOCTYPE html>
+<html>
+
+  <head>
+
+    <title>Forum zst</title>
+
+     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+     <link rel="stylesheet" type="text/css" href="res/css/fontello.min.css">
+     <link rel="stylesheet" type="text/css" href="res/css/style.css">
+
+     <meta charset="UTF-8">
+     <meta name="theme-color" content="#44C470">
+
+     <link rel="icon" sizes="192x192" href="res/img/ico.png">
+
+     <script async type="text/javascript" src="res/js/jquery-3.1.1.min.js"></script>
+     <script async type="text/javascript" src="res/js/jquery.sticky.min.js"></script>
+     <script async type="text/javascript" src="res/js/style.min.js"></script>
+     <script async type="text/javascript" src="res/js/add_quest.js"></script>
+
+  </head>
+
+  <body>
+
+
+      <nav class="navbar">
+          <ul class="nav-left">
+              <li><a href="index.html" class="btn"><span class="icon-home-1"></span></a></li>
+              <li><a href="add_quest.html" class="btn"><span class="icon-plus"></span></a></li>
+              <li><a href="account.html" class="btn"><span class="icon-user"></span></a></li>
+              <li><a href="rejestracja.html" class="btn"><span class="icon-user-plus"></span></a></li>
+              <li><a href="https://github.com/informacja" target="_blank" class="btn"><span class="icon-github-circled"></span></a></li>
+          </ul>
+          <ul class="nav-right">
+              <li>
+                  <a href="#" class="btn">
+                      <span class="icon-cog" id="show-login">
+                          <div>
+                              <div class="nav-user" onclick="window.location.replace('account.html');">
+                                  <div class="ico-user">
+                                      <span class="icon-user"></span>
+                                  </div>
+                                  <div class="user-name"></div>
+                              </div>
+                              <button id="rej" class="pz">Rejestracja</button><br>
+                              <label for="login" class="pz">Login:</label><br>
+                              <input type="text" id="login" class="pz login"></input><br>
+                              <label for="pass" class="pz">Hasło:</label><br>
+                              <input type="password" id="pass" class="pz pass"></input><br>
+                              <button id="login-btn" class="pz lb">Zaloguj się</button>
+                              <button id="log-out" class="btn btn-d loa">Wyloguj się</button>
+                          </div>
+                      </span>
+                  </a>
+              </li>
+          </ul>
+          <div style="clear:both;"></div>
+      </nav>
+
+
+
+
+    <div class="container">
+
+      <div class="context">
+        <div class="add-q-div">
+          <div class="zap-data" style="float: left">
+            <div class="zap-data-nick"></div>
+            <div class="zap-data-icon"><span class="icon-user"></span></div>
+          </div>
+          <div class="add-q-text">
+            <label for="add-q-title">Temat: </label>
+            <input type="text" id="add-q-title"></input>
+            <label for="add-q-t">Pytanie: </label>
+            <textarea rows="10" cols="50" id="add-q-t"></textarea>
+            <label for="add-q-k">Kategorie: </label>
+            <select id="add-q-k">
+                <option value="programowanie">programowanie</option>
+                <option value="oprogramowanie">oprogramowanie</option>
+                <option value="sieci komputerowe">sieci komputerowe</option>
+                <option value="systemy operacyjne">systemy operacyjne</option>
+                <option value="grafika">grafika</option>
+                <option value="mysql">mysql</option>
+                <option value="sprzęt">sprzęt</option>
+                <option value="ogólne">ogólne</option>
+            </select> 
+            <button class="btn btn-d" id="a-d-btn">Zadaj pytanie</button>
+          </div>
+        </div>
+        <div class="msg">
+
+        </div>
+      </div>
+
+        <nav class="context-nav">
+            <div class="nav-item" id="szuk">
+                <input type="text" id="search-in"></input>
+                <button id="search-btn"><sapn class="icon-search"></span></button>
+            </div>
+            <div id="home-data">
+                <div class="nav-item zo" id="div-zap">
+                    <div><span> </span></div>
+                    <div><span>Zapytań</span></div>
+                </div>
+                <div class="nav-item zo" id="div-odp">
+                    <div><span> </span></div>
+                    <div><span>Odpowiedzi</span></div>
+                </div>
+            </div>
+            <div style="clear:both;"></div>
+            <div id="ac">
+                <div class="nav-item ac loa" id="log-out">
+                    <span class="icon-logout"></span>
+                </div>
+                <div class="nav-item ac" id="ac-btn" onclick="window.location.replace('account.html');">
+                    <sapn class="icon-user"></span>
+                </div>
+            </div>
+        </nav>
+
+
+      <div style="clear:both;"></div>
+    </div>
+
+    <footer class="footer">
+      <div class="row">Forum zst 2017r. &copy; Wszelkie prawa zastrzeżone</div>
+      <div class="row">Strona Zaprojektowana przez Wiktortr</div>
+    </footer>
+
+  </body>
+
+</html>

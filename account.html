@@ -1,0 +1,141 @@
+﻿<!DOCTYPE html>
+<html>
+
+  <head>
+
+    <title>Forum zst</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="res/css/fontello.min.css">
+    <link rel="stylesheet" type="text/css" href="res/css/style.css">
+
+
+    <meta charset="UTF-8">
+    <meta name="theme-color" content="#44C470">
+
+
+    <link rel="icon" sizes="192x192" href="res/img/ico.png">
+
+    <script async type="text/javascript" src="res/js/jquery-3.1.1.min.js"></script>
+    <script async type="text/javascript" src="res/js/jquery.sticky.min.js"></script>
+    <script async type="text/javascript" src="res/js/style.min.js"></script>
+    <script async type="text/javascript" src="res/js/account.js"></script>
+
+  </head>
+
+
+  <body>
+
+      <nav class="navbar">
+          <ul class="nav-left">
+              <li><a href="index.html" class="btn"><span class="icon-home-1"></span></a></li>
+              <li><a href="add_quest.html" class="btn"><span class="icon-plus"></span></a></li>
+              <li><a href="account.html" class="btn"><span class="icon-user"></span></a></li>
+              <li><a href="rejestracja.html" class="btn"><span class="icon-user-plus"></span></a></li>
+              <li><a href="https://github.com/informacja" target="_blank" class="btn"><span class="icon-github-circled"></span></a></li>
+          </ul>
+          <ul class="nav-right">
+              <li>
+                  <a href="#" class="btn">
+                      <span class="icon-cog" id="show-login">
+                          <div>
+                              <div class="nav-user" onclick="window.location.replace('account.html');">
+                                  <div class="ico-user">
+                                      <span class="icon-user"></span>
+                                  </div>
+                                  <div class="user-name"></div>
+                              </div>
+                              <button id="rej" class="pz">Rejestracja</button><br>
+                              <label for="login" class="pz">Login:</label><br>
+                              <input type="text" id="login" class="pz login" /><br>
+                              <label for="pass" class="pz">Hasło:</label><br>
+                              <input type="password" id="pass" class="pz pass" /><br>
+                              <button id="login-btn" class="pz lb">Zaloguj się</button>
+                              <button id="log-out" class="btn btn-d loa">Wyloguj się</button>
+                          </div>
+                      </span>
+                  </a>
+              </li>
+          </ul>
+          <div style="clear:both;"></div>
+      </nav>
+
+
+    <div class="container">
+      <div class="msg"></div>
+
+
+      <div class="account-login">
+        <span>Formularz Logowania</span>
+        <label for="login">Login:</label><br>
+        <input type="text" id="login2"></input><br>
+        <label for="pass">Hasło:</label><br>
+        <input type="password" id="pass2"></input><br>
+        <button id="login-btn" class="login-btn-2">Zaloguj się</button>
+      </div>
+
+      <div class="account-div">
+
+        <input type="file" id="file-ico" accept="image/*"/>
+
+        <div class="account-icon">
+          <span class="icon-user"></span>
+        </div>
+
+        <div class="account-name user-name">User name</div>
+
+        <div class="account-data">
+          <span>Pytania: 10</span>
+          <span>Odpowiedzi: 100</span>
+        </div>
+
+        <div style="clear: both"></div>
+
+        <div class="account-msg">
+
+        </div>
+
+        <div class="separate tjl"></div>
+
+        <div class="account-pass tjl">
+          <span>Zmień hasło</span>
+          <input type="password" id="zpass1"></input><br>
+          <input type="password" id="zpass2"></input><br>
+        </div>
+
+        <div class="separate tjl"></div>
+
+        <div class="account-email tjl">
+            <span>Zmień email</span>
+            <input type="email" id="zemail"></input><br>
+        </div>
+
+        <div class="separate tjl"></div>
+
+        <div class="account-an tjl">
+            <span>Auto powiaddomienia</span>
+            <input type="checkbox" id="zautonot"></input><br>
+        </div>
+
+        <div class="separate tjl"></div>
+
+        <button class="btn btn-d tjl" id="save-a-data">Zapisz zmiany</button><br>
+
+        <div class="separate tjl"></div>
+
+      </div>
+
+      <div style="clear:both;"></div>
+    </div>
+
+    <footer class="footer">
+      <div class="row">Forum zst 2017r. &copy; Wszelkie prawa zastrzeżone</div>
+      <div class="row">Strona Zaprojektowana przez Wiktortr</div>
+    </footer>
+
+
+
+  </body>
+
+
+</html>

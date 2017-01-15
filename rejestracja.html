@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html>
+<html>
+
+  <head>
+
+    <title>Forum zst</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="res/css/fontello.min.css">
+    <link rel="stylesheet" type="text/css" href="res/css/style.css">
+
+    <meta charset="UTF-8">
+    <meta name="theme-color" content="#44C470">
+
+    <link rel="icon" sizes="192x192" href="res/img/ico.png">
+
+    <script async type="text/javascript" src="res/js/jquery-3.1.1.min.js"></script>
+    <script async type="text/javascript" src="res/js/jquery.sticky.min.js"></script>
+    <script async type="text/javascript" src="res/js/style.min.js"></script>
+    <script async type="text/javascript" src="res/js/rej.js"></script>
+
+  </head>
+
+
+  <body>
+
+      <nav class="navbar">
+          <ul class="nav-left">
+              <li><a href="index.html" class="btn"><span class="icon-home-1"></span></a></li>
+              <li><a href="add_quest.html" class="btn"><span class="icon-plus"></span></a></li>
+              <li><a href="account.html" class="btn"><span class="icon-user"></span></a></li>
+              <li><a href="rejestracja.html" class="btn"><span class="icon-user-plus"></span></a></li>
+              <li><a href="https://github.com/informacja" target="_blank" class="btn"><span class="icon-github-circled"></span></a></li>
+          </ul>
+          <ul class="nav-right">
+              <li>
+                  <a href="#" class="btn">
+                      <span class="icon-cog" id="show-login">
+                          <div>
+                              <div class="nav-user" onclick="window.location.replace('account.html');">
+                                  <div class="ico-user">
+                                      <span class="icon-user"></span>
+                                  </div>
+                                  <div class="user-name"></div>
+                              </div>
+                              <button id="rej" class="pz">Rejestracja</button><br>
+                              <label for="login" class="pz">Login:</label><br>
+                              <input type="text" id="login" class="pz login"></input><br>
+                              <label for="pass" class="pz">Hasło:</label><br>
+                              <input type="password" id="pass" class="pz pass"></input><br>
+                              <button id="login-btn" class="pz lb">Zaloguj się</button>
+                              <button id="log-out" class="btn btn-d loa">Wyloguj się</button>
+                          </div>
+                      </span>
+                  </a>
+              </li>
+          </ul>
+          <div style="clear:both;"></div>
+      </nav>
+
+
+    <div class="container">
+
+      <div class="msg"></div>
+      <div class="rej-div">
+
+        <span>Rejestracja</span>
+        <label for="rej-in-0">Login:</label>
+        <input type="text" id="login-rej"></input>
+        <label for="rej-in-1">E-mail:</label>
+        <input type="email" id="email-rej"></input>
+        <label for="rej-in-2">Hasło:</label>
+        <input type="password" id="pass-rej-1"></input>
+        <label for="rej-in-3">Powtórz hasło:</label>
+        <input type="password" id="pass-rej-2"></input>
+        <button class="btn btn-d" id="rej-btn">Zarejestruj się</button>
+
+      </div>
+
+      <div style="clear:both;"></div>
+    </div>
+
+    <footer class="footer">
+      <div class="row">Forum zst 2017r. &copy; Wszelkie prawa zastrzeżone</div>
+      <div class="row">Strona Zaprojektowana przez Wiktortr</div>
+    </footer>
+
+
+
+  </body>
+
+
+</html>
